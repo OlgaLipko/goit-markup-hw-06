@@ -389,24 +389,56 @@
    </svg>
     </button>
 
-<form>
+
+
+<form class="form js-speaker-forms">
+    <b class="modal-header"> Оставьте свои данные, мы вам перезвоним
+    </b>
+<div class="form-field">
     <label for="user-name">Имя</label>
-    <input type="text" name="name" id="user-name" autofocus autocomplete="on" />
-
+    <input type="text" 
+    name="name" 
+    id="user-name" 
+    autofocus autocomplete="on"
+    placeholder="Имя"
+    />
+    </div>
+<div class="form-field">
     <label for="user-tel">Телефон</label>
-    <input type="tel" name="tel" id="user-tel" autocomplete="on" />
-
+    <input type="tel" 
+    name="tel" 
+    id="user-tel" 
+    autocomplete="on"
+    placeholder="Телефон" 
+    />
+</div>
+<div class="form-field">
     <label for="user-email">Почта</label>
-    <input type="email" name="mail" id="user-email" autocomplete="on"  />
-
-<label>
-    Комментарий
-    <textarea name="comment" rows="5" placeholder="Введите текст"></textarea>
-</label>
-
-    <button type="submit">Отправить</button>
+    <input type="email" 
+    name="mail" 
+    id="user-email" 
+    autocomplete="off"
+    placeholder="Email"
+    />
+</div>
+<div class="form-field">
+ <label>
+    Комментарий</label><textarea class="textarea-comment"
+    name="comment" 
+    rows="5" 
+    placeholder="Введите текст"></textarea>
+</div>
+<div class="form-field mailing">
+    <label>
+        <input type="checkbox" name="agreement" value="agreement" />
+        <p class="mailing-text">Соглашаюсь с рассылкой и принимаю Условия договора</p>
+    </label>
+</div>
+<div>
+    <button type="submit" class="submit-button">Отправить</button>
+  </div>
 </form>
-
+</div>
 </div>
 
 </div>
