@@ -781,6 +781,11 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.modal-btn :hover,
+.modal-btn :focus {
+  fill: var(--link-color-change);
+}
+
 .modal-header {
   font-weight: bold;
   font-size: 20px;
@@ -788,7 +793,7 @@ body {
   display: flex;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 12px;
+  margin-bottom: 30px;
 }
 
 textarea {
@@ -815,10 +820,25 @@ textarea {
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
   color: var(--color-text-lighter);
+  position: relative;
+}
+.modal-input-fields {
+  padding-left: 52px;
+}
+
+.form-label {
+  transform: translateY(-58px);
+}
+.modal-input-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(12px, 11px);
 }
 .form-field input {
   margin: 0px;
-  padding: 15px 14px;
+  height: 42px;
+  padding: 11px 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -833,6 +853,7 @@ textarea {
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+  transform: translateX(52px);
 }
 
 .form-field .mailing {
@@ -875,4 +896,5 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
