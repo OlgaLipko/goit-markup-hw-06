@@ -363,13 +363,12 @@
 
 
 <div class="footer-input">
-    <!-- <p class="footer-input-header"> подпишитесь на рассылку</p> -->
+    
 <form class="footer-form">
     <div class="label-input">
     <label  class="footer-label-mail" for="mail">подпишитесь на рассылку</label>
-     
-        <input type="email" name="mail" id="mail"  class="footer-mail-input"/>
-</div>
+    <input type="email" name="mail" id="mail"  class="footer-mail-input"  placeholder="Email"/>
+    </div>
     <button type="submit" class="footer-mail-button" >Подписаться
 <svg class="footer-button-picture" width="24" height="24">
     <use href="./images/icons.svg#icon-send"></use></svg>
@@ -391,68 +390,70 @@
     </button>
 
 
-
+<!--Модальное окно-->
 <form class="form js-speaker-forms">
     <b class="modal-header"> Оставьте свои данные, мы вам перезвоним
     </b>
-<div class="form-field">
-    <label for="user-name" class="form-label">Имя</label>
-   
-    <input class="modal-input-fields" type="text" 
+<!-- <div class="form-field"> -->
+    <label class="form-label"><span class="form-text">Имя</span>
+    <input class="modal-input-fields" 
+    type="text" 
     name="name" 
-    id="user-name" 
     autofocus autocomplete="on"
     placeholder=" "   
     />
-    
     <svg class="modal-input-icon" width="18" height="18">
         <use href="./images/icons.svg#person-input"></use>
     </svg>
-  
-    </div>
-<div class="form-field">
-    <label for="user-tel" class="form-label">Телефон</label>
+    </label>
+     
+    
+
+    <label  class="form-label"><span class="form-text">Телефон</span>
   <input class="modal-input-fields" type="tel" 
     name="tel" 
-    id="user-tel" 
     autocomplete="on"
     placeholder=" " 
     />
-  
-<svg class="modal-input-icon" width="18" height="18">
+  <svg class="modal-input-icon" width="18" height="18">
     <use href="./images/icons.svg#phone-input"></use>
 </svg>
-</div>
-<div class="form-field">
+</label>
+
+
+
     
-    <label for="user-email" class="form-label">Почта</label>
+    <label  class="form-label"><span class="form-text">Почта</span>
     <input class="modal-input-fields" type="email" 
     name="mail" 
-    id="user-email" 
     autocomplete="off"
     placeholder=" "
     />
-    
-    <svg class="modal-input-icon" width="18" height="18">
+        <svg class="modal-input-icon" width="18" height="18">
         <use href="./images/icons.svg#email-input"></use>
     </svg>
-</div>
-<div class="form-field">
- <label>
-    Комментарий</label><textarea class="textarea-comment"
+    </label>
+
+ <label class="form-label">
+    <span class="form-text">Комментарий</span><textarea class="textarea-comment"
     name="comment" 
     rows="5" 
     placeholder="Введите текст"></textarea>
-</div>
-<div class="form-field mailing">
-    <label>
-        <input type="checkbox" name="agreement" value="agreement" />
-        <p class="mailing-text">Соглашаюсь с рассылкой и принимаю Условия договора</p>
     </label>
-</div>
-<div>
+
+
+    <label class="form-field mailing">
+        <input class="checkbox" type="checkbox" name="agreement" value="agreement" />
+        
+        <p class="mailing-text">Соглашаюсь с рассылкой и принимаю <a href="" class="agreement">Условия договора</a></p>
+    </label>
+<!-- <svg class="icon-check" width="16" height="15">
+    <use href="./images/icons.svg#check-icon"></use>
+</svg> -->
+
+
     <button type="submit" class="submit-button">Отправить</button>
-  </div>
+ 
 </form>
 </div>
 </div>
