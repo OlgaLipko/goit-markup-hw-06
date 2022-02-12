@@ -885,6 +885,8 @@ body {
 
 .modal-input-fields {
   padding-left: 42px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 .form-label input {
   margin: 0px;
@@ -909,6 +911,14 @@ body {
 
 .form-label:hover,
 .form-label:focus {
+  border-color: #2196f3;
+  fill: #2196f3;
+}
+
+.form-label input:hover,
+.form-label input:focus,
+.modal-input-icon:hover,
+.modal-input-icon:focus {
   border-color: #2196f3;
   fill: #2196f3;
 }
@@ -967,10 +977,11 @@ textarea {
 
 .checkbox {
   position: absolute;
-  /* -webkit-appearance: none;
+  -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none; */
+  appearance: none;
 }
+
 .checkbox {
   position: absolute;
   width: 16px;
@@ -979,8 +990,17 @@ textarea {
   left: 12.5px;
   margin-right: 7px;
 }
+
 .icon-check {
-  background-color: var(--color-text-lighter);
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 1px solid #000000;
+  border-radius: 2px;
+}
+
+.icon-check {
+  /* background-color: var(--color-text-lighter); */
   position: absolute;
   width: 16px;
   height: 15px;
@@ -990,8 +1010,14 @@ textarea {
   z-index: 2;
 }
 
-.checkbox:checked {
+.checkbox:checked + .icon-check {
+  border-color: var(--link-color-change);
+  background-color: var(--link-color-change);
+  background-image: url(../images/icon\ check.svg);
+  background-size: contain;
+  background-origin: border-box;
 }
+
 .mailing-text {
   font-weight: 400;
   font-size: 14px;
