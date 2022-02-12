@@ -888,6 +888,12 @@ body {
   padding-top: 12px;
   padding-bottom: 12px;
 }
+
+.modal-input-fields input::placeholder {
+  fill: var(--link-color-change);
+  border: var(--link-color-change);
+}
+
 .form-label input {
   margin: 0px;
   height: 40px;
@@ -976,19 +982,19 @@ textarea {
 }
 
 .checkbox {
-  position: absolute;
+  /* position: absolute;
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
-}
+  appearance: none; */
 
-.checkbox {
   position: absolute;
-  width: 16px;
-  height: 15px;
-  top: 4px;
-  left: 12.5px;
-  margin-right: 7px;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .icon-check {
@@ -997,20 +1003,19 @@ textarea {
   height: 15px;
   border: 1px solid #000000;
   border-radius: 2px;
-}
-
-.icon-check {
-  /* background-color: var(--color-text-lighter); */
-  position: absolute;
-  width: 16px;
-  height: 15px;
-  top: 4px;
-  left: 12.5px;
   margin-right: 7px;
-  z-index: 2;
+  left: 12.5px;
 }
 
 .checkbox:checked + .icon-check {
+  border-color: var(--link-color-change);
+  background-color: var(--link-color-change);
+  background-image: url(../images/icon\ check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.checkbox:focus + .icon-check {
   border-color: var(--link-color-change);
   background-color: var(--link-color-change);
   background-image: url(../images/icon\ check.svg);
@@ -1024,7 +1029,6 @@ textarea {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
-  margin-left: 22px;
 }
 
 .submit-button {
