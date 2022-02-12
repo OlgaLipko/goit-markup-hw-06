@@ -396,6 +396,7 @@
     </b>
 <!-- <div class="form-field"> -->
     <label class="form-label"><span class="form-text">Имя</span>
+    
     <input class="modal-input-fields" 
     type="text" 
     name="name" 
@@ -435,21 +436,23 @@
     </label>
 
  <label class="form-label">
-    <span class="form-text">Комментарий</span><textarea class="textarea-comment"
+    <span class="form-text">Комментарий  
+    </span><textarea class="textarea-comment"
     name="comment" 
-    rows="5" 
+    rows="8" 
     placeholder="Введите текст"></textarea>
     </label>
 
 
     <label class="form-field mailing">
+        <svg class="icon-check" width="16" height="15">
+            <use href="./images/icons.svg#icon-check"></use>
+        </svg>
         <input class="checkbox" type="checkbox" name="agreement" value="agreement" />
-        
-        <p class="mailing-text">Соглашаюсь с рассылкой и принимаю <a href="" class="agreement">Условия договора</a></p>
+            
+   
+<p class="mailing-text">Соглашаюсь с рассылкой и принимаю <a href="" class="agreement">Условия договора</a></p>
     </label>
-<!-- <svg class="icon-check" width="16" height="15">
-    <use href="./images/icons.svg#check-icon"></use>
-</svg> -->
 
 
     <button type="submit" class="submit-button">Отправить</button>

@@ -867,7 +867,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-top: 40px;
-  padding-bottom: 40px;
 }
 
 .form-label {
@@ -889,7 +888,7 @@ body {
 }
 .form-label input {
   margin: 0px;
-  height: 42px;
+  height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -907,6 +906,13 @@ body {
   color: rgba(117, 117, 117, 0.5);
   transform: translateX(52px);
 }
+
+.form-label:hover,
+.form-label:focus {
+  border-color: #2196f3;
+  fill: #2196f3;
+}
+
 .modal-input-icon {
   position: absolute;
   top: 0;
@@ -931,6 +937,7 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  height: 120px;
 }
 
 .textarea-comment .placeholder {
@@ -954,10 +961,33 @@ textarea {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+  margin-bottom: 30px;
+  position: relative;
 }
 
 .checkbox {
+  position: absolute;
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; */
+}
+.checkbox {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  top: 4px;
+  left: 12.5px;
   margin-right: 7px;
+}
+.icon-check {
+  background-color: var(--color-text-lighter);
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  top: 4px;
+  left: 12.5px;
+  margin-right: 7px;
+  z-index: 2;
 }
 
 .checkbox:checked {
@@ -968,6 +998,7 @@ textarea {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-left: 22px;
 }
 
 .submit-button {
