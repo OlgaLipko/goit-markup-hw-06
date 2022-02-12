@@ -395,7 +395,11 @@
     <b class="modal-header"> Оставьте свои данные, мы вам перезвоним
     </b>
 <!-- <div class="form-field"> -->
-    <label class="form-label"><span class="form-text">Имя</span>
+    <label class="form-label">
+        <span class="form-text">Имя
+
+        </span>
+       <div class="from-label-item">
         <input class="modal-input-fields" 
         type="text" 
         name="name" 
@@ -405,10 +409,12 @@
     <svg class="modal-input-icon" width="18" height="18">
         <use href="./images/icons.svg#person-input"></use>
     </svg>
+       </div>
     </label> 
     
     <label  class="form-label"><span class="form-text">Телефон</span>
-  <input class="modal-input-fields" type="tel" 
+    <div class="from-label-item">
+    <input class="modal-input-fields" type="tel" 
     name="tel" 
     autocomplete="on"
     placeholder=" " 
@@ -416,21 +422,25 @@
   <svg class="modal-input-icon" width="18" height="18">
     <use href="./images/icons.svg#phone-input"></use>
 </svg>
+</div>
 </label>
   
     <label  class="form-label"><span class="form-text">Почта</span>
-    <input class="modal-input-fields" type="email" 
+    <div class="from-label-item">
+        <input class="modal-input-fields" type="email" 
     name="mail" 
-    autocomplete="off"
+    autocomplete="on"
     placeholder=" "
     />
         <svg class="modal-input-icon" width="18" height="18">
         <use href="./images/icons.svg#email-input"></use>
     </svg>
+</div>
     </label>
 
  <label class="form-label">
-    <span class="form-text">Комментарий  
+    <span class="form-text">
+    Комментарий  
     </span><textarea class="textarea-comment"
     name="comment" 
     rows="8" 
@@ -439,15 +449,18 @@
 
 
     <label class="form-field mailing">
-               <input class="checkbox" 
+        
+        <input class="checkbox" 
                type="checkbox" 
                name="agreement" 
                value="agreement" />
    <span class="icon-check"></span>
-     
+
    <p class="mailing-text">
     Соглашаюсь с рассылкой и принимаю 
-    <a href="" class="agreement">Условия договора</a></p>
+    <a href="" class="agreement">
+        Условия договора</a></p>
+       
     </label>
     <button type="submit" class="submit-button">Отправить</button>
  
