@@ -1012,6 +1012,7 @@ textarea {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+  outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1030,17 +1031,24 @@ textarea {
 .checkbox:checked + .icon-check {
   border-color: var(--link-color-change);
   background-color: var(--link-color-change);
-  background-image: url(../images/icon\ check.svg);
-  background-size: contain;
-  background-origin: border-box;
 }
 
 .checkbox:focus-visible + .icon-check {
   border-color: var(--link-color-change);
   background-color: var(--link-color-change);
-  background-image: url(../images/icon\ check.svg);
-  background-size: contain;
+}
+
+.form-field-icon {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  top: 4px;
+  left: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-origin: border-box;
+  outline: none;
 }
 
 .mailing-text {
