@@ -598,7 +598,7 @@ body {
   align-items: baseline;
 }
 .footer-social-title,
-.footer-label-mail {
+.footer-mail {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -629,13 +629,7 @@ body {
   margin-bottom: 9px;
 }
 
-/* .footer-input {
-  margin: ;
-} */
-
-.label-input {
-  display: flex;
-  flex-direction: column;
+.footer-input {
   margin-right: 12px;
 }
 
@@ -668,7 +662,7 @@ body {
 .footer-button-picture {
   margin-left: 10px;
 }
-.footer-label-mail {
+.footer-mail {
   display: flex;
   justify-content: flex-start;
 }
@@ -819,6 +813,7 @@ body {
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 40px;
 }
 .modal-btn {
   position: absolute;
@@ -866,10 +861,10 @@ body {
 
 .form {
   width: 448px;
-  height: 500px;
+  height: 501px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 40px;
+  outline: none;
 }
 
 .form-label {
@@ -883,6 +878,9 @@ body {
   letter-spacing: 0.01em;
   color: var(--color-text-lighter);
   position: relative;
+}
+.form-label:nth-child(5) {
+  margin-bottom: 20px;
 }
 
 .form-label input::placeholder {
@@ -899,14 +897,6 @@ body {
   display: flex;
   position: relative;
   width: 100%;
-}
-
-.form-field .mailing {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #757575;
 }
 
 .form-text {
@@ -993,17 +983,20 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
   margin-bottom: 30px;
   position: relative;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 .checkbox {
-  /* position: absolute;
+  position: absolute;
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none; */
-
+  appearance: none;
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1033,7 +1026,7 @@ textarea {
   background-color: var(--link-color-change);
 }
 
-.checkbox:focus-visible + .icon-check {
+.checkbox:focus + .icon-check {
   border-color: var(--link-color-change);
   background-color: var(--link-color-change);
 }
@@ -1043,7 +1036,7 @@ textarea {
   width: 16px;
   height: 15px;
   top: 4px;
-  left: 13px;
+  left: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1063,11 +1056,9 @@ textarea {
   position: absolute;
   left: 164px;
   right: 164px;
-  bottom: 40px;
   width: 200px;
   height: 50px;
   border: none;
-  padding: 0;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -1080,4 +1071,5 @@ textarea {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  outline: none;
 }
