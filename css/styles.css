@@ -1021,18 +1021,16 @@ textarea {
 
 .checkbox:checked + .icon-check {
   opacity: 0;
+  border-color: inherit;
 }
 .checkbox:checked ~ .form-field-icon {
   opacity: 1;
   background-color: var(--link-color-change);
 }
 
-.checkbox:focus-visible + .icon-check {
-  opacity: 0;
-}
-.checkbox:focus-visible ~ .form-field-icon {
-  opacity: 1;
-  background-color: var(--link-color-change);
+.checkbox:focus-visible + .icon-check,
+.checkbox:focus + .icon-check {
+  border-color: var(--link-color-change);
 }
 
 .form-field-icon {
